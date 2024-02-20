@@ -19,7 +19,9 @@
 configuration {
     modi: "drun";
     show-icons: true;
-    display-drun: "";
+    icon-theme: "Papirus";
+    display-drun: "🔎";
+
 }
 
 listview {
