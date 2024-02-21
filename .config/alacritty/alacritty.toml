@@ -2,6 +2,26 @@ import = [
 
 ]
 
+[font]
+size = 13.0
+
+[font.bold]
+family = "HackNerdFont"
+style = "Bold"
+
+[font.bold_italic]
+family = "HackNerdFont"
+style = "Bold Italic"
+
+[font.italic]
+family = "HackNerdFont"
+style = "Italic"
+
+[font.normal]
+family = "HackNerdFont"
+style = "Regular"
+
+
 
 [window]
 decorations = "Full"
