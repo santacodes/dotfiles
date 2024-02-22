@@ -27,9 +27,13 @@ require("nvim-tree").setup {
   on_attach = my_on_attach,
   ---
 }
+
+-- Feline status bar 
+
+
+
 -- Setting relative line numbers
 vim.wo.relativenumber = true
-
 
 
 
