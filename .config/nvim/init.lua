@@ -4,7 +4,6 @@ require("lazy.lazy")
 -- Telescope Keymaps 
 local builtin = require("telescope.builtin")
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
-
 -- NVIM Tree
 local function my_on_attach(bufnr)
   local api = require "nvim-tree.api"
@@ -27,9 +26,6 @@ require("nvim-tree").setup {
   on_attach = my_on_attach,
   ---
 }
-
--- Feline status bar 
-
 
 
 -- Setting relative line numbers
