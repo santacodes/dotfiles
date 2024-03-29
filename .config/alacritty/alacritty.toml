@@ -3,7 +3,7 @@ import = [
 ]
 
 [font]
-size = 13.0
+size = 12.0
 
 [font.bold]
 family = "HackNerdFont"
@@ -27,7 +27,8 @@ style = "Regular"
 decorations = "Full"
 opacity = 0.8
 blur = true
-
+dynamic_padding = true
+startup_mode = "Maximized"
 # Colors Custom
 # Author santacodes
 
