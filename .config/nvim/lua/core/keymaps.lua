@@ -1,7 +1,7 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' ' 
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
-vim.opt.backspace = '2'
+vim.opt.backspace = "2"
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
 vim.opt.autowrite = true
@@ -13,4 +13,9 @@ vim.opt.shiftwidth = 2
 vim.opt.shiftround = true
 vim.opt.expandtab = true
 
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
+-- Nvimtree
+vim.keymap.set("n", "<leader>o", ":NvimTreeOpen")
+vim.keymap.set("n", "<leader>c", ":NvimTreeClose")
+vim.keymap.set("n", "<leader>s", ":w")
+vim.keymap.set("n", "<leader>q", ":q!")
