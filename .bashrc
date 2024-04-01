@@ -258,7 +258,6 @@ bash_prompt() {
 	local PROMT_PWD=$"$TEXT_FORMAT_3 \${NEW_PWD} "
 	local PROMT_INPUT=$"$PROMT_FORMAT "
 
-
 	############################################################################
 	## SEPARATOR FORMATING                                                    ##
 	## Generate the separators between sections                               ##
@@ -290,7 +289,7 @@ bash_prompt() {
 	local SEPARATOR_1=$SEPARATOR_FORMAT_1$TRIANGLE
 	local SEPARATOR_2=$SEPARATOR_FORMAT_2$TRIANGLE
 	local SEPARATOR_3=$SEPARATOR_FORMAT_3$TRIANGLE
-
+  local GITBRANCH=" \$(git branch 2>/dev/null | grep '^*' | colrm 1 2)> "
 
 
 	############################################################################
@@ -312,7 +311,7 @@ bash_prompt() {
 	## BASH PROMT                                                             ##
 	## Generate promt and remove format from the rest                         ##
 	############################################################################
-	PS1="$TITLEBAR\n${PROMT_USER}${SEPARATOR_1}${PROMT_HOST}${SEPARATOR_2}${PROMT_PWD}${SEPARATOR_3}${PROMT_INPUT}"
+	PS1="$TITLEBAR\n${PROMT_USER}${SEPARATOR_1}${PROMT_HOST}${SEPARATOR_2}${PROMT_PWD}${SEPARATOR_3}${PROMT_INPUT}${GITBRANCH}"
 
 	
 
@@ -345,18 +344,4 @@ unset bash_prompt
 ### EOF ###
 . "$HOME/.cargo/env"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/santa/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/santa/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/santa/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/santa/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
