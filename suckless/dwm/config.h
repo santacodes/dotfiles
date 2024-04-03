@@ -14,7 +14,8 @@ static const int smartgaps =
 static const int showbar = 1; /* 0 means no bar */
 static const int topbar = 1;  /* 0 means bottom bar */
 static const char *fonts[] = {
-    "monospace:size=12", "JoyPixels:pixelsize=10:antialias=true:autohint=true"};
+    "HackNerdFont:size=12",
+    "JoyPixels:pixelsize=10:antialias=true:autohint=true"};
 static const char dmenufont[] = "monospace:size=12";
 static const char col_gray1[] = "#49108B"; // background
 static const char col_gray2[] = "#E26EE5"; // border
@@ -66,7 +67,7 @@ static const Layout layouts[] = {
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd)                                                             \
   {                                                                            \
-    .v = (const char *[]) { "/bin/terminator", "-c", cmd, NULL }               \
+    .v = (const char *[]) { "/bin/alacritty", "-c", cmd, NULL }                \
   }
 
 /* commands */
