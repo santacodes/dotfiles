@@ -2,10 +2,10 @@
 My Arch Linux config files 
 
 # Specifications 
-- OS - Arch Linux
-- WM - DWM 
-- Terminal Alacritty
-- Editor Nvim 
+- OS - [Arch Linux](https://archlinux.org/)
+- WM - [dwm](https://dwm.suckless.org/) 
+- Terminal - [Alacritty](https://alacritty.org/)
+- Editor - [neovim](https://neovim.io/) 
 
 # Installing nvim configs 
 - To install my nvim configs clone this repository using
