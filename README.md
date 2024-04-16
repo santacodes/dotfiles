@@ -27,3 +27,34 @@ My Arch Linux config files
   :Lazy #once the lazy menu pops up press `I` to install the plugins
   ```
   Finally, reload neovim and finish the setup.
+
+# Installing my build of dwm with patches
+After a fresh install of Linux without any desktop environments or window managers would be the best way to install dwm. In case you already have a window manager or a desktop environment it is better to kill those instances first before proceeding to use dwm.
+## Pre-requisites for dwm 
+dwm needs the following packages to run, it is advised to install them using the appropriate package managers on your machine with sudo privileges.
+```
+base-devel 
+libx11
+libxft
+libxinerama
+freetype2
+fontconfig
+```
+
+## Compiling and installing `dwm` on your local machine
+```bash
+git clone https://github.com/santacodes/dotfiles.git
+cd dotfiles/suckless/dwm
+sudo make clean install
+```
+## Additionally you can also install `dmenu` for searching and starting applications
+From the root dotfiles folder 
+```bash
+cd suckless/dmenu
+sudo make clean install
+```
+Once dwm and dmenu are installed you can start a dwm instance on the `x server` using 
+```bash
+startx
+```
+Additionally, you can configure dmw and change the fonts and keybindings in `config.h` header file as per your personal preferences. Once you change the config, recompile and install dwm using ```sudo make clean install```. Restart the `x server` instance to see the changes by killing it using `MOD+Shift+q` and using `startx` again to reload the server.
