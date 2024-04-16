@@ -50,6 +50,9 @@ return {
 				"black", -- python formatter
 				"pylint", -- python linter
 				"eslint_d", -- js linter
+				"cpplint", -- c++ linter
+				"clang-format", -- c/c++ linter
+				"ast-grep", -- common linter
 			},
 		})
 	end,
