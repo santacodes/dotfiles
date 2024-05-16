@@ -53,6 +53,7 @@ return {
 				"cpplint", -- c++ linter
 				"clang-format", -- c/c++ linter
 				"ast-grep", -- common linter
+				"jsonlint", -- json linter
 			},
 		})
 	end,
