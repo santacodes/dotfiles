@@ -54,6 +54,7 @@ return {
 				"clang-format", -- c/c++ linter
 				"ast-grep", -- common linter
 				"jsonlint", -- json linter
+				"yamllint", -- yaml linter
 			},
 		})
 	end,
