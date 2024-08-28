@@ -53,6 +53,8 @@ From the root dotfiles folder
 cd suckless/dmenu
 sudo make clean install
 ```
+To get the appropriate statuses in the status bar, copy the binary files from `.local/bin` of this repository to your `.local/bin` folder.
+
 Once dwm and dmenu are installed you can start a dwm instance on the `x server` using 
 ```bash
 startx
