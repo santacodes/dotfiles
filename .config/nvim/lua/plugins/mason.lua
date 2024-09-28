@@ -34,7 +34,10 @@ return {
 				"pyright",
 				"clangd",
 				"cmake",
+				"ruff",
+				"ruff_lsp",
 				"dockerls",
+				"ts_ls",
 				"gopls",
 				"rust_analyzer",
 			},
@@ -46,8 +49,8 @@ return {
 			ensure_installed = {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
-				"isort", -- python formatter
 				"black", -- python formatter
+				"ruff", -- python formatter
 				"pylint", -- python linter
 				"eslint_d", -- js linter
 				"cpplint", -- c++ linter
