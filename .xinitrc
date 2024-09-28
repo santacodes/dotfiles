@@ -1,3 +1,4 @@
+export XDG_MENU_PREFIX=plasma-
 # Execute dwm 
 xrdb -merge ~/.Xresources
 # Enable the nitrogen background
