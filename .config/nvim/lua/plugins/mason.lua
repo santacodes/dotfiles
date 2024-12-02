@@ -40,6 +40,7 @@ return {
 				"ts_ls",
 				"gopls",
 				"rust_analyzer",
+				"emmet_ls",
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true, -- not the same as ensure_installed
