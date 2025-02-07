@@ -35,7 +35,6 @@ return {
 				"clangd",
 				"cmake",
 				"ruff",
-				"ruff_lsp",
 				"dockerls",
 				"ts_ls",
 				"gopls",
