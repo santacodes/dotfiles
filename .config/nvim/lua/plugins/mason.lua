@@ -40,6 +40,7 @@ return {
 				"gopls",
 				"rust_analyzer",
 				"emmet_ls",
+				"jdtls",
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true, -- not the same as ensure_installed
