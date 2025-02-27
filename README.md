@@ -19,6 +19,7 @@ My Arch Linux config files
     ```bash
     cp -r dotfiles/.config/nvim/* ~/home/.config/nvim/ 
     ```
+    `Note: Installing Hack nerd fonts is necessary for it to work.`
 - After copying the files run open neovim in your current directory by executing the following commands and then initialise and install lazy plugins
   
   ```bash
