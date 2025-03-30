@@ -29,4 +29,5 @@ require("nvim-tree").setup({
 	---
 })
 -- Setting relative line numbers
+vim.wo.number = true
 vim.wo.relativenumber = true
