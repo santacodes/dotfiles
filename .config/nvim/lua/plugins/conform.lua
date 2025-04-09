@@ -18,7 +18,7 @@ return {
 		-- Define your formatters
 		formatters_by_ft = {
 			lua = { "stylua" },
-			python = { "ruff_format", "ruff_fix" },
+			python = { "ruff_format", "ruff_fix", "black" },
 			javascript = { "prettier" },
 			c = { "astyle" },
 			cpp = { "astyle" },
